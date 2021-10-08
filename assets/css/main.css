@@ -1,0 +1,72 @@
+/* font-family: 'Poppins', sans-serif;
+    font-family: 'Satisfy', cursive; 
+    https://www.youtube.com/watch?v=xd39Ho1kfqc;
+*/
+header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.header__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__logo-link{
+    text-decoration: none;
+}
+.header__logo-img{
+    width: 150px;
+}
+.header__navbar{
+}
+.navbar{
+
+}
+.navbar__list{
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar__list-item{
+    font-size: 1.6rem;
+    font-weight: 600;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar__list-item-link{
+    display: block;
+    padding: 0px 37px;
+    text-decoration: none;
+    color:var(--text-color);
+}
+.header__block-icons-wrap{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__block-icon-item{
+    padding-right: 20px;
+}
+.header__block-icon-item:last-child{
+    padding: 0px;
+}
+.header__block-icon-item svg{
+    fill: currentColor;
+    stroke: currentColor;
+    width: 20px;
+}
+.header__block-icon-item svg:first-child{
+    width: 25px;
+}
+.header__block-icon-item:first-child{
+    stroke-width: 0.2;
+}
