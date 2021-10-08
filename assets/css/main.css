@@ -40,12 +40,33 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .navbar__list-item-link{
     display: block;
-    padding: 0px 37px;
+    padding: 8px 37px;
     text-decoration: none;
     color:var(--text-color);
+}
+.navbar__list-item-link:hover{
+    color: var(--primary-color);
+}
+.navbar__list-item-text{
+    position: relative;
+}
+.navbar__list-item-text::after{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    height: 3px;
+    width: 0px;
+    background-color: var(--primary-color);
+    transition: width 0.3s linear;
+}
+.navbar__list-item-text:hover::after{
+    width: 100%;
 }
 .header__block-icons-wrap{
     height: 100%;
