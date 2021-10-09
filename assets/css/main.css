@@ -42,19 +42,32 @@ header{
     justify-content: center;
     position: relative;
 }
-.navbar__list-item-link{
+.navbar__sub-menu-list-item{
+    font-size: 1.6rem;
+    font-weight: 600;
+    position: relative;
+}
+.navbar__list-item:hover .navbar__sub-menu{
+    max-height: 500px;
+    /* opacity: 1; */
+}
+.navbar__list-item-link,
+.navbar__sub-menu-list-item-link{
     display: block;
     padding: 8px 37px;
     text-decoration: none;
     color:var(--text-color);
 }
-.navbar__list-item-link:hover{
+.navbar__list-item-link:hover,
+.navbar__sub-menu-list-item-link:hover{
     color: var(--primary-color);
 }
-.navbar__list-item-text{
+.navbar__list-item-text,
+.navbar__sub-menu-list-item-text{
     position: relative;
 }
-.navbar__list-item-text::after{
+.navbar__list-item-text::after,
+.navbar__sub-menu-list-item-text::after{
     content: "";
     position: absolute;
     display: block;
@@ -65,9 +78,33 @@ header{
     background-color: var(--primary-color);
     transition: width 0.3s linear;
 }
-.navbar__list-item-text:hover::after{
+.navbar__list-item-text:hover::after,
+.navbar__sub-menu-list-item-text:hover:after{
     width: 100%;
 }
+.navbar__sub-menu{
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    /* opacity: 0; */
+    overflow: hidden;
+    transition: max-height 0.6s linear;
+}
+.navbar__sub-menu-list{
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+.navbar__sub-menu-list-item-link{
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color:var(--text-color);
+}
+
+
 .header__block-icons-wrap{
     height: 100%;
     display: flex;
