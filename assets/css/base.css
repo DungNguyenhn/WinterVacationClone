@@ -9,10 +9,35 @@
 *{
     box-sizing: inherit;
 }
+::selection{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
 html{
     font-size: 62.5%;
     line-height: 1.6rem;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     background-color: var(--white-color);
+}
+.btn{
+    outline: none;
+    border: none;
+    background-color: var(--primary-color);
+}
+
+@keyframes fadeIn{
+    from{
+        max-height: 0px;
+    }to{
+        max-height: 500px;
+    }
+}
+@keyframes opacityBlur{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
