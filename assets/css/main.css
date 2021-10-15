@@ -3,7 +3,7 @@
     https://www.youtube.com/watch?v=xd39Ho1kfqc;
 */
 header{
-    height: 80px;
+    height: var(--header-height);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,7 +49,7 @@ header{
 }
 
 .navbar__list-item:hover .navbar__sub-menu:not(.sub-menu-second){
-    animation: fadeIn 0.6s linear, opacityBlur 0.2s ease-out;
+    animation: topToBottom 0.6s linear, fadeIn 0.2s ease-out;
     max-height: 500px;
 }
 .navbar__sub-menu-list-item{
@@ -198,36 +198,75 @@ header{
     left: 0;
     right: 0;
     bottom: 0;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    /* display: none; */
     background-color: rgba(63, 208, 212,0.85);
+    transition: opacity 0.3s linear, visibility 0.3s linear;    
+}
+.trasition-overlay-search{
+    opacity: 1;
+    visibility: visible;
+}
+.overlay-search-icon-times{
+    height: var(--header-height);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.overlay-search-icon-times i{
+    font-size: 2.4rem;
+    color: var(--white-color);
+    padding: 4px;
+    cursor: pointer;
+}
+.overlay-search-form-wrap{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay-search-form-wrap::after{
+    font-size: 3rem;
+    top: 0;
+    right: 0;
+    display: block;
+    color: var(--white-color);
 }
 .navbar__search-overlay{
     height: 82px;
     width: 100%;
+    margin: 0px 220px;
     display: flex;
     justify-content: center;
 }
 .navbar__search-overlay-input{
     height: 100%;
-    width: 50%;
+    width: 70%;
     padding: 12px 32px;
     outline: none;
     border: none;
     font-size: 1.4rem;
+    border-radius: unset;
 }
 .search-btn-large{
     height: 100%;
-    width: 20%;
-    border-radius: unset;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 30%;
     font-size: 1.4rem;
     font-weight: 600;
     color: var(--white-color);
     text-transform: uppercase;
 }
-
+.btn:hover{
+    background-color: #23a9af;
+    cursor: pointer;
+}
 /* Navbar slide area and overlay */
 .nav__slide-area-overplay{
     position: fixed;
@@ -313,11 +352,11 @@ header{
     border: none;
     background-color: #f8f8f8;
     color: #848484;
+    border-radius: unset;
 }
 .search-btn-medium{
     height: 100%;
     width: 50px;
-    border-radius: 0;
 }
 .search-btn-medium i{
     font-size: 1.6rem;

@@ -23,17 +23,22 @@ html{
 .btn{
     outline: none;
     border: none;
+    border-radius: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--primary-color);
+    transition: background-color 0.2s ease-in;
 }
 
-@keyframes fadeIn{
+@keyframes topToBottom{
     from{
         max-height: 0px;
     }to{
         max-height: 500px;
     }
 }
-@keyframes opacityBlur{
+@keyframes fadeIn{
     from{
         opacity: 0;
     }
@@ -41,3 +46,10 @@ html{
         opacity: 1;
     }
 }
+/* @keyframes reverseFadeIn {
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+    }
+} */

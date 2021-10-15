@@ -5,7 +5,9 @@ const navListItems = $$('.navbar__list-item');
 const overlay = $('.nav__slide-area-overplay');
 const overlaySearch = $('.overlay-search')
 const slideArea = $('.header__block-icon-item:last-child');
-const searchOverlay = $('.header__block-icon-item:nth-child(2)');
+const searchOverlayIcon = $('.header__block-icon-item:nth-child(2)');
+const formSearchOverlay = $('.navbar__search-overlay');
+const closeFormSearch = $('.overlay-search-icon-times i');
 const navbarSlideArea = $('.navbar__slide-area');
 const closeSlideArea = $('.navbar__slide-area-icon i');
 for(let i=0;i<navListItems.length;i++){
@@ -22,11 +24,19 @@ for(let i=0;i<navListItems.length;i++){
         subMenu.classList.remove('overflow-visible');
     }
 }
-searchOverlay.onclick=(e)=>{
-    overlaySearch.classList.add('visible');
+searchOverlayIcon.onclick=(e)=>{
+    overlaySearch.classList.add('trasition-overlay-search');
 }
+
 overlaySearch.onclick=(e)=>{
-    overlaySearch.classList.remove('visible');
+    overlaySearch.classList.remove('trasition-overlay-search');
+    e.stopPropagation();
+}
+formSearchOverlay.onclick=(e)=>{
+    e.stopPropagation();
+}
+closeFormSearch.onclick=(e)=>{
+    overlaySearch.classList.remove('trasition-overlay-search');
     e.stopPropagation();
 }
 overlay.onclick=(e)=>{
