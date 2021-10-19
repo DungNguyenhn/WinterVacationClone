@@ -30,7 +30,14 @@ html{
     background-color: var(--primary-color);
     transition: background-color 0.2s ease-in;
 }
-
+.circle-dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #9fe7e9;
+    margin: 0px 6px;
+    cursor: pointer;
+}
 @keyframes topToBottom{
     from{
         max-height: 0px;

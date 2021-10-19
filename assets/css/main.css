@@ -1,8 +1,7 @@
 /* font-family: 'Poppins', sans-serif;
     font-family: 'Satisfy', cursive; 
-    https://www.youtube.com/watch?v=xd39Ho1kfqc;
 */
-header{
+.header{
     height: var(--header-height);
     display: flex;
     align-items: center;
@@ -104,6 +103,8 @@ header{
     overflow: hidden;
     box-shadow: 0px 0px 0.7px 0.1px rgba(0,0,0,0.5);
     /* transition: max-height 1.4s; */
+    z-index: 2;
+    background-color: var(--white-color);
 }
 .navbar__sub-menu-list{
     list-style: none;
@@ -202,7 +203,8 @@ header{
     opacity: 0;
     /* display: none; */
     background-color: rgba(63, 208, 212,0.85);
-    transition: opacity 0.3s linear, visibility 0.3s linear;    
+    transition: opacity 0.3s linear, visibility 0.3s linear;  
+    z-index: 2;  
 }
 .trasition-overlay-search{
     opacity: 1;
@@ -290,6 +292,10 @@ header{
     height: 100%;
     transform: translateX(100%);
     transition: transform 0.4s linear;
+    z-index: 2;
+}
+.navbar__slide-area::-webkit-scrollbar{
+    display: none;
 }
     
 .navbar__slide-area-transfrom{
@@ -381,4 +387,641 @@ header{
 .navbar__slide-area-social-media-icon i{
     font-size: 1.8rem;
     color: var(--white-color);
+}
+
+
+/* Main content */
+.main-cointainer{
+
+}
+
+/* Slider  */
+.slider{
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+}
+.slider__img{
+    background-image: url('../img/skiing-slider-img-1.jpg');
+    background-repeat: no-repeat;
+    background-position:top center;
+    background-size: cover;
+    height: 420px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.slider__content{
+    position: absolute;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+.slider__sub-title{
+    display: block;
+    height: max-content;
+    width: max-content;
+    font-family: 'Satisfy', cursive; 
+    font-size: 5.2rem;
+    line-height: 5.4rem;
+    color: var(--white-color);
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+.slider__title{
+    font-size: 10rem;
+    line-height: 10.2rem;
+    font-weight: 600;
+    color: var(--white-color);
+    text-transform: capitalize;
+    margin: 0;
+    padding-bottom: 40px;
+}
+.slider__text-content{
+    width: 60%;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    color: var(--white-color);
+    margin: 0;
+    text-align: center;
+}
+.slider__btn-previous-wrap{
+    position: absolute;
+    top: 50%;
+    left: 40px;
+}
+.slider__btn-next-wrap{
+    position: absolute;
+    top: 50%;
+    right: 40px;
+}
+.slider__btn-previous,
+.slider__btn-next{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    transition: color 0.4s ease-in;
+}
+.slider__btn-previous i,
+.slider__btn-next i{
+    font-size: 2rem;
+}
+.slider__btn-previous:hover,
+.slider__btn-next:hover{
+    background-color: var(--primary-color);
+    color: var(--white-color) ;
+    cursor: pointer;
+}
+
+/* Tour slider */
+.tour-slider-wrap{
+    margin-top: 24px;
+}
+.tour-slider-wrap .tour-slider{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.tour-slider__item{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.05);
+    margin-right: 12px;
+}
+.tour-slider__img{
+    height: max-content;
+}
+.tour-slider__img img{
+    width: 100%;
+    display: block;
+}
+.tour-slider__top-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    height: 40px;
+    padding-left: 24px;
+    padding-right: 120px;
+
+}
+.tour-slider__calendar-icon,
+.tour-slider__human-icon,
+.tour-slider__map-maker-icon{
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tour-slider__icon-wrap{
+    margin-right: 12px;
+}
+.tour-slider__calendar-icon span,
+.tour-slider__human-icon span,
+.tour-slider__map-maker-icon span{
+    display: block;
+
+}
+.tour-slider__map-maker-icon{
+    text-transform: capitalize;
+}
+.tour-slider__bottom-content{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+.tour-slider__title{
+    padding-bottom: 24px;
+}
+.tour-slider__title-link{
+    text-transform: capitalize;
+    width: max-content;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.2s ease-in;
+}
+.tour-slider__title-link:hover{
+    color: var(--primary-color);
+}
+.tour-slider__body-text{
+    padding-bottom: 24px;
+}
+.tour-slider__body-text-content{
+    margin: 0px;
+    display: -webkit-box;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    height: 4.8rem;
+    color: var(--text-color);
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.tour-slider__info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 120px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+}
+.tour-slider__price{
+
+}
+.tour-slider__quality{
+    text-transform: capitalize;
+}
+.tour-slider__dot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tour-slider__circle-wrap{
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tour-slider__circle{
+    transition: color 0.2s ease-in;
+}
+.circle-dot.active{
+    background-color: var(--primary-color);
+}
+
+/* Video intro */
+.video__intro{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.video__intro-title{
+    text-align: center;
+    text-transform: capitalize;
+}
+.video__intro-title-small{
+    font-size: 3rem;
+    line-height: 3.2rem;
+    color: var(--primary-color);
+    font-family: 'Satisfy', cursive; 
+}
+.video__intro-title-large{
+    font-size: 6.6rem;
+    line-height: 6.8rem;
+    color: var(--text-color);
+    font-weight: 600;
+    margin: 24px;
+}
+.video__intro-info-wrap{
+    text-align: center;
+    width: 800px;
+}
+.video__intro-info-video{
+    
+}
+.video__intro-info-img-wrap{
+    position: relative;
+}
+.video__intro-info-img{
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    box-shadow: 3px 3px 9px 1px rgb(0 0 0 / 5%)
+}
+.video__intro-info-img:hover ~.video__intro-info-btn .playbtn-medium{
+    transform: scale(1.1,1.1);
+}
+.video__intro-info-btn{
+    position: absolute;
+    /* Cách 1 center ra giữa */
+    /* width: 100%;
+    top: 50%;
+    display: flex;
+    justify-content: center; */
+
+    /* Cách 2 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.playbtn-medium{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    color: var(--white-color);
+    transition: transform 0.2s linear;
+}
+.playbtn-medium i{
+    font-size: 2rem;
+}
+.video__intro-text-wrap{
+    margin: 14px 0px;
+}
+.video__intro-text{
+    margin: 0px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    
+}
+.video__intro-btn{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.btn-large{
+    height: 50px;
+    width: 200px;
+    text-transform: uppercase ;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+}
+
+/* Review  */
+.review{
+    margin-top: 48px;
+    padding: 48px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../img/skiing-parallax-1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;  
+}
+.review__title{
+    text-align: center;
+    width: 40%;
+}
+.review__title-text{
+    font-size: 6.6rem;
+    line-height: 6.8rem;
+    color: var(--white-color);
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-top: 0px;
+}
+.review__title-content{
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: var(--white-color);
+    margin-top: 0px;
+}
+.review__customer{
+    padding-top: 18px;
+}
+.review__customer-list{
+    flex-wrap: nowrap;
+}
+.review__customer-list 
+div.review__customer-list-item.col{
+    background-color: var(--white-color);
+    padding: 40px;
+    display: flex;
+    border-radius: 8px;
+    margin-right: 40px;
+}
+.review__customer-img{
+    padding-right: 12px;
+}
+.review__customer-info{
+    text-align: left;
+}
+.review__customer-title{
+    text-transform: capitalize;
+    color: var(--text-color);
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding-bottom: 18px;
+    display: block;
+}
+.review__customer-title:hover{
+    color: var(--primary-color);
+}
+.review__customer-rating{
+    padding-bottom: 18px;
+}
+.review__customer-rating i{
+    color: var(--primary-color);
+}
+.review__customer-feedback{
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding-bottom: 18px;
+}
+.review__customer-name{
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 600;
+}
+.review__customer-dot{
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.review__customer-circle{
+    background-color: rgba(63,208,212,.5);
+}
+.review__customer-circle:hover{
+    background-color:var(--primary-color);
+}
+
+/* Feature */
+.feature{
+    margin: 66px 0px;
+}
+.feature__top{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize; */
+}
+.feature__top-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+}
+.feature__title-small{
+    font-size: 3rem;
+    line-height: 3.2rem;
+    color: var(--primary-color);
+    font-family: 'Satisfy', cursive;
+}
+.feature__title-large{
+    font-size: 6.6rem;
+    line-height: 6.8rem;
+    color: var(--text-color);
+    font-weight: 600;
+    margin: 24px;
+}
+.feature__top-text{
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: var(--text-color);
+    margin-top: 0px;
+    text-align: center;
+    text-transform: none;
+    max-width: 80%;
+}
+.feature__bottom{
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feature__bottom-flex{
+    width: 1100px;
+}
+.feature__bottom-info{
+
+}
+.feature__bottom-info-padding{
+    padding: 0px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.feature__bottom-img{
+    
+}
+.feature__bottom-title{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    text-transform: capitalize;
+}
+.feature__bottom-text{
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: center;
+}
+
+
+/* Our team  */
+/* .our-team__wrap{
+    position: relative;
+} */
+.our-team__img{
+    position: relative;
+}
+.our-team__img img{
+    display: block;
+    width: 100%;
+}
+.our-team__img:hover .our-team__info{
+    transform: translateY(-100%);
+}
+.our-team__info{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 24px;
+    text-align: center;
+    position: absolute;
+    transform: translateY(0%);
+    transition: transform 0.6s ease;
+}
+.our-team__name{
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-transform: capitalize;
+    margin-top: 0px;
+}
+.our-team__socials i{
+    font-size: 1.6rem;
+    margin: 12px 12px 0 12px;
+    padding: 4px;
+    cursor: pointer;
+}
+.our-team__socials i:hover{ 
+    color: #23a9af;
+}
+.our-team__introduce{
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: center;
+}
+.our-team__counter-col{
+    z-index: 2;
+}
+.our-team__counter-col-wrap{
+    /* display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center; */
+}
+.our-team__counter{
+    padding:40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 210px;
+    background-color: #3abdc1;
+}
+.our-team__number-large{
+    font-size: 6.6rem;
+    line-height: 6.8rem;
+    color: var(--white-color);
+    font-weight: 600;
+    margin: 0px;
+}
+.our-team__text-small{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: var(--white-color);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/* Resort location */
+.resort-location{
+margin: 66px 0px;
+}
+.resort-location__top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.resort-location__title--small{
+    font-size: 3rem;
+    line-height: 3.2rem;
+    color: var(--primary-color);
+    font-family: 'Satisfy', cursive;
+}
+.resort-location__title--large{
+    font-size: 6.6rem;
+    line-height: 6.8rem;
+    color: var(--text-color);
+    font-weight: 600;
+    margin: 24px;
+}
+.resort-location__text{
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: var(--text-color);
+    margin-top: 0px;
+    text-align: center;
+    text-transform: none;
+    max-width: 40%;
+}
+.resort__location-info{
+   margin:0px 40px;
+   border-radius: 50%;
+   /* overflow: hidden; */
+}
+.resort__location-img{
+    position: relative;
+}
+.resort__location-img-wrap{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.resort__location-img img{
+    width: 100%;
+    cursor: pointer;
+    display: block;
+    transition: transform 0.6s ease;
+}
+.resort__location-img:hover img{
+    transform: scale(1.05)
+}
+.resort__location-overlay-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.resort__location-name{
+    font-family: 'Satisfy', cursive; 
+    font-size: 4rem;
+    line-height: 4.2rem;
+    text-transform: capitalize;
+    color: var(--white-color);
+}
+.resort__location-star{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    top: 15px;
+    right: 14px
+}
+.resort__location-star i{
+    font-size: 1.8rem;
+    color: var(--primary-color);
 }
