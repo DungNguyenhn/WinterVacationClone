@@ -5,6 +5,7 @@
     --primary-color: #3fd0d4;
 
     --header-height:80px;
+    --header-mobile-height:60px;
 }
 *{
     box-sizing: inherit;
@@ -13,6 +14,10 @@
     color: var(--white-color);
     background-color: var(--primary-color);
 }
+body div.preload *{
+    animation-duration: 0s !important;
+-webkit-animation-duration: 0s !important;
+transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;}
 html{
     font-size: 62.5%;
     line-height: 1.6rem;
@@ -30,13 +35,18 @@ html{
     background-color: var(--primary-color);
     transition: background-color 0.2s ease-in;
 }
-.circle-dot{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #9fe7e9;
-    margin: 0px 6px;
-    cursor: pointer;
+.text-align-right{
+    text-align: right;
+}
+ul.slick-dots li button:before{
+    font-size: 14px;
+    color: var(--primary-color);
+}
+ul.slick-dots li.slick-active button:before{
+    color: var(--primary-color);
+}
+.review__customer-dot .slick-dots{
+    bottom: 0px;
 }
 @keyframes topToBottom{
     from{
@@ -45,6 +55,7 @@ html{
         max-height: 500px;
     }
 }
+
 @keyframes fadeIn{
     from{
         opacity: 0;
@@ -53,10 +64,18 @@ html{
         opacity: 1;
     }
 }
-/* @keyframes reverseFadeIn {
+
+@keyframes textUp{
     from{
-        opacity: 1;
+        transform: translateY(20px);
     }to{
-        opacity: 0;
+        transform: translateY(0);
     }
-} */
+}
+@keyframes zoom-in {
+    from{
+        transform: scale(1);
+    }to{
+        transform: scale(1.2);
+    }
+}

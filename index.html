@@ -13,11 +13,14 @@
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <title>Document</title>
 </head>
 <body>
-    <div class="main-cointainer">
-        <header class="grid">
+    <div class="main-cointainer preload">
+        <header class="grid header-on-pc">
             <div class="header">
                 <div class="header__logo">
                     <a href="" class="header__logo-link">
@@ -94,32 +97,32 @@
                                     <ul class="navbar__sub-menu-list">
                                         <li class="navbar__sub-menu-list-item">
                                             <a href="" class="navbar__sub-menu-list-item-link">
-                                                <span class="navbar__sub-menu-list-item-text">Travel Angency</span>
+                                                <span class="navbar__sub-menu-list-item-text">About us</span>
                                             </a>
                                         </li>
                                         <li class="navbar__sub-menu-list-item">
                                             <a href="" class="navbar__sub-menu-list-item-link">
-                                                <span class="navbar__sub-menu-list-item-text">Winter Holidays</span>
+                                                <span class="navbar__sub-menu-list-item-text">what we offer</span>
                                             </a>
                                         </li>
                                         <li class="navbar__sub-menu-list-item">
                                             <a href="" class="navbar__sub-menu-list-item-link">
-                                                <span class="navbar__sub-menu-list-item-text">Exotic Destinations</span>
+                                                <span class="navbar__sub-menu-list-item-text">our team</span>
                                             </a>
                                         </li>
                                         <li class="navbar__sub-menu-list-item">
                                             <a href="" class="navbar__sub-menu-list-item-link">
-                                                <span class="navbar__sub-menu-list-item-text">Summer Holidays</span>
+                                                <span class="navbar__sub-menu-list-item-text">get in touch</span>
                                             </a>
                                         </li>
                                         <li class="navbar__sub-menu-list-item">
                                             <a href="" class="navbar__sub-menu-list-item-link">
-                                                <span class="navbar__sub-menu-list-item-text">City Tours</span>
+                                                <span class="navbar__sub-menu-list-item-text">contact us</span>
                                             </a>
                                         </li>
                                         <li class="navbar__sub-menu-list-item">
                                             <a href="" class="navbar__sub-menu-list-item-link">
-                                                <span class="navbar__sub-menu-list-item-text">New Year Trips</span>
+                                                <span class="navbar__sub-menu-list-item-text">FAQ page</span>
                                             </a>
                                         </li>
                                         <li class="navbar__sub-menu-list-item">
@@ -129,17 +132,12 @@
                                         </li>
                                         <li class="navbar__sub-menu-list-item">
                                             <a href="" class="navbar__sub-menu-list-item-link">
-                                                <span class="navbar__sub-menu-list-item-text">Wine Tours</span>
+                                                <span class="navbar__sub-menu-list-item-text">coming soon</span>
                                             </a>
                                         </li>
                                         <li class="navbar__sub-menu-list-item">
                                             <a href="" class="navbar__sub-menu-list-item-link">
-                                                <span class="navbar__sub-menu-list-item-text">Vacation Showcase</span>
-                                            </a>
-                                        </li>
-                                        <li class="navbar__sub-menu-list-item">
-                                            <a href="" class="navbar__sub-menu-list-item-link">
-                                                <span class="navbar__sub-menu-list-item-text">Landing</span>
+                                                <span class="navbar__sub-menu-list-item-text">error page</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -149,11 +147,54 @@
                                 <a href="" class="navbar__list-item-link">
                                     <span class="navbar__list-item-text">Destination</span>
                                 </a>
+                                <div class="navbar__sub-menu">
+                                    <ul class="navbar__sub-menu-list">
+                                        <li class="navbar__sub-menu-list-item">
+                                            <a href="" class="navbar__sub-menu-list-item-link">
+                                                <span class="navbar__sub-menu-list-item-text">destination list</span>
+                                            </a>
+                                        </li>
+                                        <li class="navbar__sub-menu-list-item">
+                                            <a href="" class="navbar__sub-menu-list-item-link">
+                                                <span class="navbar__sub-menu-list-item-text">destination slider</span>
+                                            </a>
+                                        </li>
+                                        <li class="navbar__sub-menu-list-item">
+                                            <a href="" class="navbar__sub-menu-list-item-link">
+                                                <span class="navbar__sub-menu-list-item-text">destination item</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="navbar__list-item">
                                 <a href="" class="navbar__list-item-link">
                                     <span class="navbar__list-item-text">Tours</span>
                                 </a>
+                                <div class="navbar__sub-menu">
+                                    <ul class="navbar__sub-menu-list">
+                                        <li class="navbar__sub-menu-list-item">
+                                            <a href="" class="navbar__sub-menu-list-item-link">
+                                                <span class="navbar__sub-menu-list-item-text">Standard list</span>
+                                            </a>
+                                        </li>
+                                        <li class="navbar__sub-menu-list-item">
+                                            <a href="" class="navbar__sub-menu-list-item-link">
+                                                <span class="navbar__sub-menu-list-item-text">gallery list</span>
+                                            </a>
+                                        </li>
+                                        <li class="navbar__sub-menu-list-item">
+                                            <a href="" class="navbar__sub-menu-list-item-link">
+                                                <span class="navbar__sub-menu-list-item-text">split list</span>
+                                            </a>
+                                        </li>
+                                        <li class="navbar__sub-menu-list-item">
+                                            <a href="" class="navbar__sub-menu-list-item-link">
+                                                <span class="navbar__sub-menu-list-item-text">tour item</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="navbar__list-item">
                                 <a href="" class="navbar__list-item-link">
@@ -169,9 +210,11 @@
                                         <li class="navbar__sub-menu-list-item have-one-sub-menu">
                                             <a href="" class="navbar__sub-menu-list-item-link ">
                                                 <span class="navbar__sub-menu-list-item-text">Blog Standard</span>
-                                                <span class="navbar__sub-menu-list-item-text">></span>
+                                                <span class="navbar__sub-menu-list-item-icon">
+                                                    <i class="fas fa-angle-right"></i>
+                                                </span>
                                             </a>
-                                            <div class="navbar__sub-menu sub-menu-second">
+                                            <div class="navbar__sub-menu sub-menu-second sub-menu-right">
                                                 <ul class="navbar__sub-menu-list">
                                                     <li class="navbar__sub-menu-list-item">
                                                         <a href="" class="navbar__sub-menu-list-item-link">
@@ -194,8 +237,49 @@
                                         <li class="navbar__sub-menu-list-item  have-one-sub-menu">
                                             <a href="" class="navbar__sub-menu-list-item-link">
                                                 <span class="navbar__sub-menu-list-item-text">Post Types</span>
-                                                <span class="navbar__sub-menu-list-item-text">></span>
+                                                <span class="navbar__sub-menu-list-item-icon">
+                                                    <i class="fas fa-angle-right"></i>
+                                                </span>
                                             </a>
+                                            <div class="navbar__sub-menu sub-menu-second sub-menu-right">
+                                                <ul class="navbar__sub-menu-list">
+                                                    <li class="navbar__sub-menu-list-item">
+                                                        <a href="" class="navbar__sub-menu-list-item-link">
+                                                            <span class="navbar__sub-menu-list-item-text">Standard</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="navbar__sub-menu-list-item">
+                                                        <a href="" class="navbar__sub-menu-list-item-link">
+                                                            <span class="navbar__sub-menu-list-item-text">gallery</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="navbar__sub-menu-list-item">
+                                                        <a href="" class="navbar__sub-menu-list-item-link">
+                                                            <span class="navbar__sub-menu-list-item-text">link</span>
+                                                        </a>
+                                                    </li>   
+                                                    <li class="navbar__sub-menu-list-item">
+                                                        <a href="" class="navbar__sub-menu-list-item-link">
+                                                            <span class="navbar__sub-menu-list-item-text">quote</span>
+                                                        </a>
+                                                    </li>   
+                                                    <li class="navbar__sub-menu-list-item">
+                                                        <a href="" class="navbar__sub-menu-list-item-link">
+                                                            <span class="navbar__sub-menu-list-item-text">video</span>
+                                                        </a>
+                                                    </li>   
+                                                    <li class="navbar__sub-menu-list-item">
+                                                        <a href="" class="navbar__sub-menu-list-item-link">
+                                                            <span class="navbar__sub-menu-list-item-text">audio</span>
+                                                        </a>
+                                                    </li>   
+                                                    <li class="navbar__sub-menu-list-item">
+                                                        <a href="" class="navbar__sub-menu-list-item-link">
+                                                            <span class="navbar__sub-menu-list-item-text">no sidebar</span>
+                                                        </a>
+                                                    </li>   
+                                                </ul>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -204,6 +288,74 @@
                                 <a href="" class="navbar__list-item-link">
                                     <span class="navbar__list-item-text">Shop</span>
                                 </a>
+                                <div class="navbar__sub-menu text-align-right">
+                                    <ul class="navbar__sub-menu-list">
+                                        <li class="navbar__sub-menu-list-item">
+                                            <a href="" class="navbar__sub-menu-list-item-link">
+                                                <span class="navbar__sub-menu-list-item-text">product list</span>
+                                            </a>
+                                        </li>
+                                        <li class="navbar__sub-menu-list-item">
+                                            <a href="" class="navbar__sub-menu-list-item-link">
+                                                <span class="navbar__sub-menu-list-item-text">product list</span>
+                                            </a>
+                                        </li>
+                                        <li class="navbar__sub-menu-list-item have-one-sub-menu">
+                                            <a href="" class="navbar__sub-menu-list-item-link">
+                                                <span class="navbar__sub-menu-list-item-icon">
+                                                    <i class="fas fa-angle-left"></i>
+                                                </span>
+                                                <span class="navbar__sub-menu-list-item-text">shop layout</span>
+                                            </a>
+                                            <div class="navbar__sub-menu sub-menu-second sub-menu-left">
+                                                <ul class="navbar__sub-menu-list text-align-right">
+                                                    <li class="navbar__sub-menu-list-item">
+                                                        <a href="" class="navbar__sub-menu-list-item-link">
+                                                            <span class="navbar__sub-menu-list-item-text">three columns</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="navbar__sub-menu-list-item">
+                                                        <a href="" class="navbar__sub-menu-list-item-link">
+                                                            <span class="navbar__sub-menu-list-item-text">four columns</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="navbar__sub-menu-list-item">
+                                                        <a href="" class="navbar__sub-menu-list-item-link">
+                                                            <span class="navbar__sub-menu-list-item-text">full width</span>
+                                                        </a>
+                                                    </li>   
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="navbar__sub-menu-list-item have-one-sub-menu">
+                                            <a href="" class="navbar__sub-menu-list-item-link">
+                                                <span class="navbar__sub-menu-list-item-icon">
+                                                    <i class="fas fa-angle-left"></i>
+                                                </span>
+                                                <span class="navbar__sub-menu-list-item-text">shop pages</span>
+                                            </a>
+                                            <div class="navbar__sub-menu sub-menu-second sub-menu-left">
+                                                <ul class="navbar__sub-menu-list text-align-right">
+                                                    <li class="navbar__sub-menu-list-item">
+                                                        <a href="" class="navbar__sub-menu-list-item-link">
+                                                            <span class="navbar__sub-menu-list-item-text">my account</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="navbar__sub-menu-list-item">
+                                                        <a href="" class="navbar__sub-menu-list-item-link">
+                                                            <span class="navbar__sub-menu-list-item-text">cart</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="navbar__sub-menu-list-item">
+                                                        <a href="" class="navbar__sub-menu-list-item-link">
+                                                            <span class="navbar__sub-menu-list-item-text">check out</span>
+                                                        </a>
+                                                    </li>   
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="navbar__list-item">
                                 <a href="" class="navbar__list-item-link">
@@ -218,52 +370,42 @@
                                             <ul class="navbar__sub-menu-list">
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Travel Angency</span>
+                                                        <span class="navbar__sub-menu-list-item-text">tour list</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Winter Holidays</span>
+                                                        <span class="navbar__sub-menu-list-item-text">tour carousel</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Exotic Destinations</span>
+                                                        <span class="navbar__sub-menu-list-item-text">tourr filter</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Summer Holidays</span>
+                                                        <span class="navbar__sub-menu-list-item-text">destination with tours</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">City Tours</span>
+                                                        <span class="navbar__sub-menu-list-item-text">destination list</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">New Year Trips</span>
+                                                        <span class="navbar__sub-menu-list-item-text">destination fullscreen slider</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Destinations Carousel</span>
+                                                        <span class="navbar__sub-menu-list-item-text">fullscreen sections</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Wine Tours</span>
-                                                    </a>
-                                                </li>
-                                                <li class="navbar__sub-menu-list-item">
-                                                    <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Vacation Showcase</span>
-                                                    </a>
-                                                </li>
-                                                <li class="navbar__sub-menu-list-item">
-                                                    <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Landing</span>
+                                                        <span class="navbar__sub-menu-list-item-text">review carousel</span>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -275,52 +417,42 @@
                                             <ul class="navbar__sub-menu-list">
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Travel Angency</span>
+                                                        <span class="navbar__sub-menu-list-item-text">team</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Winter Holidays</span>
+                                                        <span class="navbar__sub-menu-list-item-text">blog list</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Exotic Destinations</span>
+                                                        <span class="navbar__sub-menu-list-item-text">shop list</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Summer Holidays</span>
+                                                        <span class="navbar__sub-menu-list-item-text">testimonials</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">City Tours</span>
+                                                        <span class="navbar__sub-menu-list-item-text">banner</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">New Year Trips</span>
+                                                        <span class="navbar__sub-menu-list-item-text">clients</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Destinations Carousel</span>
+                                                        <span class="navbar__sub-menu-list-item-text">parallax sextion</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Wine Tours</span>
-                                                    </a>
-                                                </li>
-                                                <li class="navbar__sub-menu-list-item">
-                                                    <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Vacation Showcase</span>
-                                                    </a>
-                                                </li>
-                                                <li class="navbar__sub-menu-list-item">
-                                                    <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Landing</span>
+                                                        <span class="navbar__sub-menu-list-item-text">video button</span>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -332,52 +464,47 @@
                                             <ul class="navbar__sub-menu-list">
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Travel Angency</span>
+                                                        <span class="navbar__sub-menu-list-item-text">accordions</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Winter Holidays</span>
+                                                        <span class="navbar__sub-menu-list-item-text">tabs</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Exotic Destinations</span>
+                                                        <span class="navbar__sub-menu-list-item-text">buttons</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Summer Holidays</span>
+                                                        <span class="navbar__sub-menu-list-item-text">google maps</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">City Tours</span>
+                                                        <span class="navbar__sub-menu-list-item-text">contact form</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">New Year Trips</span>
+                                                        <span class="navbar__sub-menu-list-item-text">progress bar</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Destinations Carousel</span>
+                                                        <span class="navbar__sub-menu-list-item-text">countdown</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Wine Tours</span>
+                                                        <span class="navbar__sub-menu-list-item-text">counter</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Vacation Showcase</span>
-                                                    </a>
-                                                </li>
-                                                <li class="navbar__sub-menu-list-item">
-                                                    <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Landing</span>
+                                                        <span class="navbar__sub-menu-list-item-text">call to action</span>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -389,52 +516,47 @@
                                             <ul class="navbar__sub-menu-list">
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Travel Angency</span>
+                                                        <span class="navbar__sub-menu-list-item-text">heading</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Winter Holidays</span>
+                                                        <span class="navbar__sub-menu-list-item-text">columns</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Exotic Destinations</span>
+                                                        <span class="navbar__sub-menu-list-item-text">section title</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Summer Holidays</span>
+                                                        <span class="navbar__sub-menu-list-item-text">blockquote</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">City Tours</span>
+                                                        <span class="navbar__sub-menu-list-item-text">dropcaps</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">New Year Trips</span>
+                                                        <span class="navbar__sub-menu-list-item-text">highlights</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Destinations Carousel</span>
+                                                        <span class="navbar__sub-menu-list-item-text">icon with text</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Wine Tours</span>
+                                                        <span class="navbar__sub-menu-list-item-text">separators</span>
                                                     </a>
                                                 </li>
                                                 <li class="navbar__sub-menu-list-item">
                                                     <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Vacation Showcase</span>
-                                                    </a>
-                                                </li>
-                                                <li class="navbar__sub-menu-list-item">
-                                                    <a href="" class="navbar__sub-menu-list-item-link">
-                                                        <span class="navbar__sub-menu-list-item-text">Landing</span>
+                                                        <span class="navbar__sub-menu-list-item-text">custom font</span>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -445,8 +567,8 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="header__block-icons-wrap">
-                    <div class="header__block-icon-item">
+                <div class="header__block-icons-wrap ">
+                    <div class="header__block-icon-item header__block-cart-icon">
                         <svg version="1.1" x="0px" y="0px" width="20" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
                             <g>
                                 <path stroke-width="0.3" stroke-miterlimit="10" d="M3.9,8.9H1.4c-0.7,0-1.2-0.5-1.2-1.2V6.8
@@ -475,6 +597,13 @@
                                     c-0.1-0.2,0-0.4,0.2-0.5c0.2-0.1,0.4,0,0.5,0.2l2.4,6.1c0.1,0.2,0,0.4-0.2,0.5C15,7.6,14.9,7.7,14.9,7.7z"></path>
                             </g>
                         </svg>
+                        <div class="header__block-user-cart">
+                            <div class="header__block-user-no-cart">
+                                <p class="header__block-user-no-cart-text">
+                                    No products in cart.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div class="header__block-icon-item">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20px" height="19px" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
@@ -548,7 +677,418 @@
                                         <i class="fab fa-instagram"></i>
                                     </div>
                                 </div>
-                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="grid header-on-pc-low-resolution">
+            <div class="header__mobile">
+                <div class="header__mobile-icon-nav">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="header__mobile-logo">
+                    <a href="" class="header__mobile-logo-link">
+                        <img src="./assets/img/logo-mobile-img.png" alt="">
+                    </a>
+                </div>
+                <div class="header__mobile-icon-login">
+                    <i class="far fa-user"></i>
+                </div>
+            </div>
+            <div class="header__mobile-navbar-wrap">
+                <nav class="header__mobile-navbar">
+                    <ul class="header__mobile-navbar-list">
+                        <li class="header__mobile-navbar-list-item">
+                            <a href="" class="header__mobile-navbar-list-item-link">
+                                <span>Home</span>
+                                <span  class="header__mobile-navbar-list-item-link-icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </a>
+                            <div class="navbar__sub-menu-mobile">
+                                <ul class="navbar__sub-menu-mobile-list">
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">Travel Angency</span>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">Winter Holidays</span>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">Exotic Destinations</span>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">Summer Holidays</span>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">City Tours</span>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">New Year Trips</span>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">Destinations Carousel</span>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">Wine Tours</span>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">Vacation Showcase</span>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">Landing</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__mobile-navbar-list-item">
+                            <a href="" class="header__mobile-navbar-list-item-link">
+                                <span>Page</span>
+                                <span  class="header__mobile-navbar-list-item-link-icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </a>
+                            <div class="navbar__sub-menu-mobile">
+                                <ul class="navbar__sub-menu-mobile-list">
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">About us</span>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">our team</span>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">get in touch</span>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">contact us</span>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">FAQ page</span>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">New Year Trips</span>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">Destinations Carousel</span>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">coming soon</span>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">error page</span>
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__mobile-navbar-list-item">
+                            <a href="" class="header__mobile-navbar-list-item-link">
+                                <span>Destinations</span>
+                                <span  class="header__mobile-navbar-list-item-link-icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </a>
+                            <div class="navbar__sub-menu-mobile">
+                                <ul class="navbar__sub-menu-mobile-list">
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">destination list</span>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">destination slider</span>
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">destination item</span>
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__mobile-navbar-list-item">
+                            <a href="" class="header__mobile-navbar-list-item-link">
+                                <span  >tours</span>
+                                <span class="header__mobile-navbar-list-item-link-icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </a>
+                            <div class="navbar__sub-menu-mobile">
+                                <ul class="navbar__sub-menu-mobile-list">
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">Standard list</span>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">gallery list</span>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">split list</span>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">tour item</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__mobile-navbar-list-item">
+                            <a href="" class="header__mobile-navbar-list-item-link">
+                                <span>blog</span>
+                                <span class="header__mobile-navbar-list-item-link-icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </a>
+                            <div class="navbar__sub-menu-mobile">
+                                <ul class="navbar__sub-menu-mobile-list">
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">Blog Masonry</span>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item have-sub-menu">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link have-sub-menu">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">Blog Standard</span>
+                                            <span class="header__mobile-navbar-list-item-link-icon">
+                                                <i class="fas fa-angle-right"></i>
+                                            </span>
+                                        </a>
+                                        <div class="navbar__sub-menu-mobile have-one-sub-menu">
+                                            <ul class="navbar__sub-menu-mobile-list">
+                                                <li class="navbar__sub-menu-mobile-list-item">
+                                                    <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                                        <span class="navbar__sub-menu-mobile-list-item-text">right sidebar</span>
+                                                    </a>
+                                                </li>
+                                                <li class="navbar__sub-menu-mobile-list-item">
+                                                    <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                                        <span class="navbar__sub-menu-mobile-list-item-text">left sidebar</span>
+                                                    </a>
+                                                </li>
+                                                <li class="navbar__sub-menu-mobile-list-item">
+                                                    <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                                        <span class="navbar__sub-menu-mobile-list-item-text">without sidebar</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">Post Types</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__mobile-navbar-list-item">
+                            <a href="" class="header__mobile-navbar-list-item-link">
+                                <span>shop</span>
+                                <span class="header__mobile-navbar-list-item-link-icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </a>
+                            <div class="navbar__sub-menu-mobile">
+                                <ul class="navbar__sub-menu-mobile-list">
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">product list</span>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">product list</span>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">shop layout</span>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">shop pages</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__mobile-navbar-list-item">
+                            <a href="" class="header__mobile-navbar-list-item-link">
+                                <span>elements</span>
+                                <span class="header__mobile-navbar-list-item-link-icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </a>
+                            <div class="navbar__sub-menu-mobile">
+                                <ul class="navbar__sub-menu-mobile-list">
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">feature</span>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">presentation</span>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">Classic</span>
+                                        </a>
+                                    </li>
+                                    <li class="navbar__sub-menu-mobile-list-item">
+                                        <a href="" class="navbar__sub-menu-mobile-list-item-link">
+                                            <span class="navbar__sub-menu-mobile-list-item-text">Typography</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__mobile-overlay-form">
+                <div class="header__mobile-overlay-wrap">
+                    <div class="header__mobile-overlay-form-wrap">
+                        <div class="header__mobile-form-navigation">
+                            <h4 class="header__mobile-form-title-navigation  active">
+                                login
+                            </h4>
+                            <h4 class="header__mobile-form-title-navigation ">
+                                register
+                            </h4>
+                        </div>
+                        <div class="header__mobile-form header__mobile-form-login active">
+                            <div class="header__mobile-form-login-description">
+                                <h4 class="header__mobile-form-login-description-title">
+                                    sign in here!
+                                </h4>
+                                <p class="header__mobile-form-login-description-text">
+                                    Log into your account in just few simple steps.
+                                </p>
+                            </div>
+                            <form action="" class="header__mobile-form-wrap">
+                                <div class="header__mobile-form-input">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" name="" id="" placeholder="User Name">
+                                </div>
+                                <div class="header__mobile-form-input">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="text" placeholder="Password">
+                                </div>
+                                <div class="header__mobile-form-login-remember">
+                                    <input type="checkbox" name="" id="">
+                                    <span>remember me</span>
+                                </div>
+                            </form>
+                            <div class="header__mobile-form-forgot">
+                                <span>lost your password?</span>
+                            </div>
+                            <div class=" header__mobile-form-btn">
+                                <button class="btn btn-full-with">sign in</button>
+                            </div>
+                            <p class="header-mobile-form-loginViaSocial-title">Sign in with Facebook or Google</p>
+                        </div>
+                        <div class="header__mobile-form header__mobile-form-register">
+                            <div class="header__mobile-form-login-description">
+                                <h4 class="header__mobile-form-login-description-title">
+                                    register now!
+                                </h4>
+                                <p class="header__mobile-form-login-description-text">
+                                    Join the SetSail community today & set up a free account.
+                                </p>
+                            </div>
+                            <form action="" class="header__mobile-form-wrap">
+                                <div class="header__mobile-form-input">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" name="" id="" placeholder="User Name">
+                                </div>
+                                <div class="header__mobile-form-input">
+                                    <i class="far fa-envelope"></i>
+                                    <input type="text" placeholder="Email">
+                                </div>
+                                <div class="header__mobile-form-input">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="text" placeholder="Password">
+                                </div>
+                                <div class="header__mobile-form-input">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="text" placeholder="Repeat Password">
+                                </div>
+                            </form>
+                            <div class=" header__mobile-form-btn">
+                                <button class="btn btn-full-with">register</button>
+                            </div>
+                        </div>
+                        <div class="header-mobile-form-loginViaSocial">
+                            <div class="header-mobile-form-loginViaSocial-social">
+                                <div class="header-mobile-form-loginViaSocial-social-btn">
+                                    <button class="btn btn-login-social btn-google">google</button>
+                                </div>
+                                <div class="header-mobile-form-loginViaSocial-social-btn">
+                                    <button class="btn btn-login-social btn-facebook">facebook</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -560,13 +1100,26 @@
             <!-- slider -->
             <div class="grid">
                 <div class="slider">
-                    <div class="slider__img">
-                        <div class="slider__content">
-                            <span class="slider__sub-title">enjoy your</span>
-                            <h3 class="slider__title">
-                                winter vacations
-                            </h3>
-                            <p class="slider__text-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme</p>
+                    <div class="slider__img-wrap">
+                        <div class="slider__img-content slider-active" data-index='1'>
+                            <img class="slider__img" src="./assets/img/skiing-slider-img-1.jpg" alt="">
+                            <div class="slider__content">
+                                <span class="slider__sub-title">enjoy your</span>
+                                <h3 class="slider__title">
+                                    winter vacations
+                                </h3>
+                                <p class="slider__text-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme</p>
+                            </div>
+                        </div>
+                        <div class="slider__img-content " data-index='2'>
+                            <img class="slider__img" src="./assets/img/skiing-slider-img-2.jpg" alt="">
+                            <div class="slider__content">
+                                <span class="slider__sub-title">From Alps</span>
+                                <h3 class="slider__title">
+                                    snow adventure
+                                </h3>
+                                <p class="slider__text-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme</p>
+                            </div>
                         </div>
                     </div>
                     <div class="slider__btn-previous-wrap">
@@ -584,448 +1137,350 @@
 
             <!-- Tour slider -->
             <div class="tour-slider-wrap grid">
-                <div class="tour-slider row no-gutters">
-                    <div class="tour-slider__item col l-3">
-                        <div class="tour-slider__img">
-                            <img src="./assets/img/tour-featured-img-15.jpg" alt="">
-                        </div>
-                        <div class="tour-slider__top-content">
-                            <div class="tour-slider__calendar-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="far fa-calendar"></i>
-                                </span>
-                                <span>1</span>
+                <div class="tour-slider row">
+                    <div class="tour-slider__item-wrap col l-3">
+                        <div class="tour-slider__item">
+                            <div class="tour-slider__img">
+                                <img src="./assets/img/tour-featured-img-15.jpg" alt="">
                             </div>
-                            <div class="tour-slider__human-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="fas fa-user"></i>
-                                </span>
-                                <span>13+</span>
-                            </div>
-                            <div class="tour-slider__map-maker-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </span>
-                                <span>skilling</span>
-                            </div>
-                        </div>
-                        <div class="tour-slider__bottom-content">
-                            <div class="tour-slider__title">
-                                <a href="" class="tour-slider__title-link">
-                                    winter vacations
-                                </a>
-                            </div>
-                            <div class="tour-slider__body-text">
-                                <p class="tour-slider__body-text-content">
-                                    Lorem ipsum dolor sit amet, consectetuer adipis cing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis theme natoque
-                                </p>
-                            </div>
-                            <div class="tour-slider__info">
-                                <div class="tour-slider__price">
-                                    $960
-                                </div>
-                                <div class="tour-slider__rating">
-                                    <span class="tour-slider__rating-icon">
-                                        <i class="fas fa-star"></i>
+                            <div class="tour-slider__top-content">
+                                <div class="tour-slider__calendar-icon">
+                                    <span class="tour-slider__icon-wrap">
+                                        <i class="far fa-calendar"></i>
                                     </span>
-                                    <span class="tour-slider__rating-number">
-                                        7.3
-                                    </span>
+                                    <span>1</span>
                                 </div>
-                                <div class="tour-slider__quality">
-                                    good
-                                </div>   
+                                <div class="tour-slider__human-icon">
+                                    <span class="tour-slider__icon-wrap">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                    <span>13+</span>
+                                </div>
+                                <div class="tour-slider__map-maker-icon">
+                                    <span class="tour-slider__icon-wrap">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </span>
+                                    <span class='tour-slider__map-maker-icon-text'>skilling</span>
+                                </div>
+                            </div>
+                            <div class="tour-slider__bottom-content">
+                                <div class="tour-slider__title">
+                                    <a href="" class="tour-slider__title-link">
+                                        winter vacations
+                                    </a>
+                                </div>
+                                <div class="tour-slider__body-text">
+                                    <p class="tour-slider__body-text-content">
+                                        Lorem ipsum dolor sit amet, consectetuer adipis cing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis theme natoque
+                                    </p>
+                                </div>
+                                <div class="tour-slider__info">
+                                    <div class="tour-slider__price">
+                                        $960
+                                    </div>
+                                    <div class="tour-slider__rating">
+                                        <span class="tour-slider__rating-icon">
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span class="tour-slider__rating-number">
+                                            7.3
+                                        </span>
+                                    </div>
+                                    <div class="tour-slider__quality">
+                                        good
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-slider__item-wrap col l-3">
+                        <div class="tour-slider__item">
+                            <div class="tour-slider__img">
+                                <img src="./assets/img/tour-featured-img-16.jpg" alt="">
+                            </div>
+                            <div class="tour-slider__top-content">
+                                <div class="tour-slider__calendar-icon">
+                                    <span class="tour-slider__icon-wrap">
+                                        <i class="far fa-calendar"></i>
+                                    </span>
+                                    <span>1</span>
+                                </div>
+                                <div class="tour-slider__human-icon">
+                                    <span class="tour-slider__icon-wrap">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                    <span>13+</span>
+                                </div>
+                                <div class="tour-slider__map-maker-icon">
+                                    <span class="tour-slider__icon-wrap">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </span>
+                                    <span class='tour-slider__map-maker-icon-text'>skilling</span>
+                                </div>
+                            </div>
+                            <div class="tour-slider__bottom-content">
+                                <div class="tour-slider__title">
+                                    <a href="" class="tour-slider__title-link">
+                                        magic of italy
+                                    </a>
+                                </div>
+                                <div class="tour-slider__body-text">
+                                    <p class="tour-slider__body-text-content">
+                                        Lorem ipsum dolor sit amet, consectetuer adipis cing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis theme natoque
+                                    </p>
+                                </div>
+                                <div class="tour-slider__info">
+                                    <div class="tour-slider__price">
+                                        $960
+                                    </div>
+                                    <div class="tour-slider__rating">
+                                        <span class="tour-slider__rating-icon">
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span class="tour-slider__rating-number">
+                                            7.3
+                                        </span>
+                                    </div>
+                                    <div class="tour-slider__quality">
+                                        good
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-slider__item-wrap col l-3">
+                        <div class="tour-slider__item">
+                            <div class="tour-slider__img">
+                                <img src="./assets/img/tour-featured-img-17.jpg" alt="">
+                            </div>
+                            <div class="tour-slider__top-content">
+                                <div class="tour-slider__calendar-icon">
+                                    <span class="tour-slider__icon-wrap">
+                                        <i class="far fa-calendar"></i>
+                                    </span>
+                                    <span>1</span>
+                                </div>
+                                <div class="tour-slider__human-icon">
+                                    <span class="tour-slider__icon-wrap">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                    <span>13+</span>
+                                </div>
+                                <div class="tour-slider__map-maker-icon">
+                                    <span class="tour-slider__icon-wrap">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </span>
+                                    <span class='tour-slider__map-maker-icon-text'>skilling</span>
+                                </div>
+                            </div>
+                            <div class="tour-slider__bottom-content">
+                                <div class="tour-slider__title">
+                                    <a href="" class="tour-slider__title-link">
+                                        skiing in alps
+                                    </a>
+                                </div>
+                                <div class="tour-slider__body-text">
+                                    <p class="tour-slider__body-text-content">
+                                        Lorem ipsum dolor sit amet, consectetuer adipis cing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis theme natoque
+                                    </p>
+                                </div>
+                                <div class="tour-slider__info">
+                                    <div class="tour-slider__price">
+                                        $960
+                                    </div>
+                                    <div class="tour-slider__rating">
+                                        <span class="tour-slider__rating-icon">
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span class="tour-slider__rating-number">
+                                            7.3
+                                        </span>
+                                    </div>
+                                    <div class="tour-slider__quality">
+                                        good
+                                    </div>   
+                                </div>
                             </div>
                         </div>
                         
                     </div>
-                    <div class="tour-slider__item col l-3">
-                        <div class="tour-slider__img">
-                            <img src="./assets/img/tour-featured-img-15.jpg" alt="">
-                        </div>
-                        <div class="tour-slider__top-content">
-                            <div class="tour-slider__calendar-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="far fa-calendar"></i>
-                                </span>
-                                <span>1</span>
+                    <div class=" tour-slider__item-wrap col l-3">
+                        <div class="tour-slider__item">
+                            <div class="tour-slider__img">
+                                <img src="./assets/img/tour-featured-img-18.jpg" alt="">
                             </div>
-                            <div class="tour-slider__human-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="fas fa-user"></i>
-                                </span>
-                                <span>13+</span>
-                            </div>
-                            <div class="tour-slider__map-maker-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </span>
-                                <span>skilling</span>
-                            </div>
-                        </div>
-                        <div class="tour-slider__bottom-content">
-                            <div class="tour-slider__title">
-                                <a href="" class="tour-slider__title-link">
-                                    winter vacations
-                                </a>
-                            </div>
-                            <div class="tour-slider__body-text">
-                                <p class="tour-slider__body-text-content">
-                                    Lorem ipsum dolor sit amet, consectetuer adipis cing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis theme natoque
-                                </p>
-                            </div>
-                            <div class="tour-slider__info">
-                                <div class="tour-slider__price">
-                                    $960
-                                </div>
-                                <div class="tour-slider__rating">
-                                    <span class="tour-slider__rating-icon">
-                                        <i class="fas fa-star"></i>
+                            <div class="tour-slider__top-content">
+                                <div class="tour-slider__calendar-icon">
+                                    <span class="tour-slider__icon-wrap">
+                                        <i class="far fa-calendar"></i>
                                     </span>
-                                    <span class="tour-slider__rating-number">
-                                        7.3
-                                    </span>
+                                    <span>1</span>
                                 </div>
-                                <div class="tour-slider__quality">
-                                    good
-                                </div>   
+                                <div class="tour-slider__human-icon">
+                                    <span class="tour-slider__icon-wrap">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                    <span>13+</span>
+                                </div>
+                                <div class="tour-slider__map-maker-icon">
+                                    <span class="tour-slider__icon-wrap">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </span>
+                                    <span class='tour-slider__map-maker-icon-text'>skilling</span>
+                                </div>
+                            </div>
+                            <div class="tour-slider__bottom-content">
+                                <div class="tour-slider__title">
+                                    <a href="" class="tour-slider__title-link">
+                                        snow surfing
+                                    </a>
+                                </div>
+                                <div class="tour-slider__body-text">
+                                    <p class="tour-slider__body-text-content">
+                                        Lorem ipsum dolor sit amet, consectetuer adipis cing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis theme natoque
+                                    </p>
+                                </div>
+                                <div class="tour-slider__info">
+                                    <div class="tour-slider__price">
+                                        $960
+                                    </div>
+                                    <div class="tour-slider__rating">
+                                        <span class="tour-slider__rating-icon">
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span class="tour-slider__rating-number">
+                                            7.3
+                                        </span>
+                                    </div>
+                                    <div class="tour-slider__quality">
+                                        good
+                                    </div>   
+                                </div>
                             </div>
                         </div>
                         
                     </div>
-                    <div class="tour-slider__item col l-3">
-                        <div class="tour-slider__img">
-                            <img src="./assets/img/tour-featured-img-15.jpg" alt="">
-                        </div>
-                        <div class="tour-slider__top-content">
-                            <div class="tour-slider__calendar-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="far fa-calendar"></i>
-                                </span>
-                                <span>1</span>
+                    <div class=" tour-slider__item-wrap col l-3">
+                        <div class="tour-slider__item">
+                            <div class="tour-slider__img">
+                                <img src="./assets/img/tour-featured-img-19.jpg" alt="">
                             </div>
-                            <div class="tour-slider__human-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="fas fa-user"></i>
-                                </span>
-                                <span>13+</span>
-                            </div>
-                            <div class="tour-slider__map-maker-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </span>
-                                <span>skilling</span>
-                            </div>
-                        </div>
-                        <div class="tour-slider__bottom-content">
-                            <div class="tour-slider__title">
-                                <a href="" class="tour-slider__title-link">
-                                    winter vacations
-                                </a>
-                            </div>
-                            <div class="tour-slider__body-text">
-                                <p class="tour-slider__body-text-content">
-                                    Lorem ipsum dolor sit amet, consectetuer adipis cing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis theme natoque
-                                </p>
-                            </div>
-                            <div class="tour-slider__info">
-                                <div class="tour-slider__price">
-                                    $960
-                                </div>
-                                <div class="tour-slider__rating">
-                                    <span class="tour-slider__rating-icon">
-                                        <i class="fas fa-star"></i>
+                            <div class="tour-slider__top-content">
+                                <div class="tour-slider__calendar-icon">
+                                    <span class="tour-slider__icon-wrap">
+                                        <i class="far fa-calendar"></i>
                                     </span>
-                                    <span class="tour-slider__rating-number">
-                                        7.3
-                                    </span>
+                                    <span>1</span>
                                 </div>
-                                <div class="tour-slider__quality">
-                                    good
-                                </div>   
+                                <div class="tour-slider__human-icon">
+                                    <span class="tour-slider__icon-wrap">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                    <span>13+</span>
+                                </div>
+                                <div class="tour-slider__map-maker-icon">
+                                    <span class="tour-slider__icon-wrap">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </span>
+                                    <span class='tour-slider__map-maker-icon-text'>skilling</span>
+                                </div>
+                            </div>
+                            <div class="tour-slider__bottom-content">
+                                <div class="tour-slider__title">
+                                    <a href="" class="tour-slider__title-link">
+                                        kids ski school
+                                    </a>
+                                </div>
+                                <div class="tour-slider__body-text">
+                                    <p class="tour-slider__body-text-content">
+                                        Lorem ipsum dolor sit amet, consectetuer adipis cing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis theme natoque
+                                    </p>
+                                </div>
+                                <div class="tour-slider__info">
+                                    <div class="tour-slider__price">
+                                        $960
+                                    </div>
+                                    <div class="tour-slider__rating">
+                                        <span class="tour-slider__rating-icon">
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span class="tour-slider__rating-number">
+                                            7.3
+                                        </span>
+                                    </div>
+                                    <div class="tour-slider__quality">
+                                        good
+                                    </div>   
+                                </div>
                             </div>
                         </div>
                         
                     </div>
-                    <div class="tour-slider__item col l-3">
-                        <div class="tour-slider__img">
-                            <img src="./assets/img/tour-featured-img-15.jpg" alt="">
-                        </div>
-                        <div class="tour-slider__top-content">
-                            <div class="tour-slider__calendar-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="far fa-calendar"></i>
-                                </span>
-                                <span>1</span>
+                    <div class=" tour-slider__item-wrap col l-3">
+                        <div class="tour-slider__item">
+                            <div class="tour-slider__img">
+                                <img src="./assets/img/tour-featured-img-14.jpg" alt="">
                             </div>
-                            <div class="tour-slider__human-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="fas fa-user"></i>
-                                </span>
-                                <span>13+</span>
-                            </div>
-                            <div class="tour-slider__map-maker-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </span>
-                                <span>skilling</span>
-                            </div>
-                        </div>
-                        <div class="tour-slider__bottom-content">
-                            <div class="tour-slider__title">
-                                <a href="" class="tour-slider__title-link">
-                                    winter vacations
-                                </a>
-                            </div>
-                            <div class="tour-slider__body-text">
-                                <p class="tour-slider__body-text-content">
-                                    Lorem ipsum dolor sit amet, consectetuer adipis cing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis theme natoque
-                                </p>
-                            </div>
-                            <div class="tour-slider__info">
-                                <div class="tour-slider__price">
-                                    $960
-                                </div>
-                                <div class="tour-slider__rating">
-                                    <span class="tour-slider__rating-icon">
-                                        <i class="fas fa-star"></i>
+                            <div class="tour-slider__top-content">
+                                <div class="tour-slider__calendar-icon">
+                                    <span class="tour-slider__icon-wrap">
+                                        <i class="far fa-calendar"></i>
                                     </span>
-                                    <span class="tour-slider__rating-number">
-                                        7.3
-                                    </span>
+                                    <span>1</span>
                                 </div>
-                                <div class="tour-slider__quality">
-                                    good
-                                </div>   
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="tour-slider__item col l-3">
-                        <div class="tour-slider__img">
-                            <img src="./assets/img/tour-featured-img-15.jpg" alt="">
-                        </div>
-                        <div class="tour-slider__top-content">
-                            <div class="tour-slider__calendar-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="far fa-calendar"></i>
-                                </span>
-                                <span>1</span>
-                            </div>
-                            <div class="tour-slider__human-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="fas fa-user"></i>
-                                </span>
-                                <span>13+</span>
-                            </div>
-                            <div class="tour-slider__map-maker-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </span>
-                                <span>skilling</span>
-                            </div>
-                        </div>
-                        <div class="tour-slider__bottom-content">
-                            <div class="tour-slider__title">
-                                <a href="" class="tour-slider__title-link">
-                                    winter vacations
-                                </a>
-                            </div>
-                            <div class="tour-slider__body-text">
-                                <p class="tour-slider__body-text-content">
-                                    Lorem ipsum dolor sit amet, consectetuer adipis cing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis theme natoque
-                                </p>
-                            </div>
-                            <div class="tour-slider__info">
-                                <div class="tour-slider__price">
-                                    $960
-                                </div>
-                                <div class="tour-slider__rating">
-                                    <span class="tour-slider__rating-icon">
-                                        <i class="fas fa-star"></i>
+                                <div class="tour-slider__human-icon">
+                                    <span class="tour-slider__icon-wrap">
+                                        <i class="fas fa-user"></i>
                                     </span>
-                                    <span class="tour-slider__rating-number">
-                                        7.3
-                                    </span>
+                                    <span>13+</span>
                                 </div>
-                                <div class="tour-slider__quality">
-                                    good
-                                </div>   
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="tour-slider__item col l-3">
-                        <div class="tour-slider__img">
-                            <img src="./assets/img/tour-featured-img-15.jpg" alt="">
-                        </div>
-                        <div class="tour-slider__top-content">
-                            <div class="tour-slider__calendar-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="far fa-calendar"></i>
-                                </span>
-                                <span>1</span>
-                            </div>
-                            <div class="tour-slider__human-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="fas fa-user"></i>
-                                </span>
-                                <span>13+</span>
-                            </div>
-                            <div class="tour-slider__map-maker-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </span>
-                                <span>skilling</span>
-                            </div>
-                        </div>
-                        <div class="tour-slider__bottom-content">
-                            <div class="tour-slider__title">
-                                <a href="" class="tour-slider__title-link">
-                                    winter vacations
-                                </a>
-                            </div>
-                            <div class="tour-slider__body-text">
-                                <p class="tour-slider__body-text-content">
-                                    Lorem ipsum dolor sit amet, consectetuer adipis cing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis theme natoque
-                                </p>
-                            </div>
-                            <div class="tour-slider__info">
-                                <div class="tour-slider__price">
-                                    $960
-                                </div>
-                                <div class="tour-slider__rating">
-                                    <span class="tour-slider__rating-icon">
-                                        <i class="fas fa-star"></i>
+                                <div class="tour-slider__map-maker-icon">
+                                    <span class="tour-slider__icon-wrap">
+                                        <i class="fas fa-map-marker-alt"></i>
                                     </span>
-                                    <span class="tour-slider__rating-number">
-                                        7.3
-                                    </span>
+                                    <span class='tour-slider__map-maker-icon-text'>skilling</span>
                                 </div>
-                                <div class="tour-slider__quality">
-                                    good
-                                </div>   
                             </div>
-                        </div>
-                        
-                    </div>
-                    <div class="tour-slider__item col l-3">
-                        <div class="tour-slider__img">
-                            <img src="./assets/img/tour-featured-img-15.jpg" alt="">
-                        </div>
-                        <div class="tour-slider__top-content">
-                            <div class="tour-slider__calendar-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="far fa-calendar"></i>
-                                </span>
-                                <span>1</span>
-                            </div>
-                            <div class="tour-slider__human-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="fas fa-user"></i>
-                                </span>
-                                <span>13+</span>
-                            </div>
-                            <div class="tour-slider__map-maker-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </span>
-                                <span>skilling</span>
-                            </div>
-                        </div>
-                        <div class="tour-slider__bottom-content">
-                            <div class="tour-slider__title">
-                                <a href="" class="tour-slider__title-link">
-                                    winter vacations
-                                </a>
-                            </div>
-                            <div class="tour-slider__body-text">
-                                <p class="tour-slider__body-text-content">
-                                    Lorem ipsum dolor sit amet, consectetuer adipis cing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis theme natoque
-                                </p>
-                            </div>
-                            <div class="tour-slider__info">
-                                <div class="tour-slider__price">
-                                    $960
+                            <div class="tour-slider__bottom-content">
+                                <div class="tour-slider__title">
+                                    <a href="" class="tour-slider__title-link">
+                                        active winter
+                                    </a>
                                 </div>
-                                <div class="tour-slider__rating">
-                                    <span class="tour-slider__rating-icon">
-                                        <i class="fas fa-star"></i>
-                                    </span>
-                                    <span class="tour-slider__rating-number">
-                                        7.3
-                                    </span>
+                                <div class="tour-slider__body-text">
+                                    <p class="tour-slider__body-text-content">
+                                        Lorem ipsum dolor sit amet, consectetuer adipis cing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis theme natoque
+                                    </p>
                                 </div>
-                                <div class="tour-slider__quality">
-                                    good
-                                </div>   
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="tour-slider__item col l-3">
-                        <div class="tour-slider__img">
-                            <img src="./assets/img/tour-featured-img-15.jpg" alt="">
-                        </div>
-                        <div class="tour-slider__top-content">
-                            <div class="tour-slider__calendar-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="far fa-calendar"></i>
-                                </span>
-                                <span>1</span>
-                            </div>
-                            <div class="tour-slider__human-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="fas fa-user"></i>
-                                </span>
-                                <span>13+</span>
-                            </div>
-                            <div class="tour-slider__map-maker-icon">
-                                <span class="tour-slider__icon-wrap">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </span>
-                                <span>skilling</span>
-                            </div>
-                        </div>
-                        <div class="tour-slider__bottom-content">
-                            <div class="tour-slider__title">
-                                <a href="" class="tour-slider__title-link">
-                                    winter vacations
-                                </a>
-                            </div>
-                            <div class="tour-slider__body-text">
-                                <p class="tour-slider__body-text-content">
-                                    Lorem ipsum dolor sit amet, consectetuer adipis cing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis theme natoque
-                                </p>
-                            </div>
-                            <div class="tour-slider__info">
-                                <div class="tour-slider__price">
-                                    $960
+                                <div class="tour-slider__info">
+                                    <div class="tour-slider__price">
+                                        $960
+                                    </div>
+                                    <div class="tour-slider__rating">
+                                        <span class="tour-slider__rating-icon">
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                        <span class="tour-slider__rating-number">
+                                            7.3
+                                        </span>
+                                    </div>
+                                    <div class="tour-slider__quality">
+                                        good
+                                    </div>   
                                 </div>
-                                <div class="tour-slider__rating">
-                                    <span class="tour-slider__rating-icon">
-                                        <i class="fas fa-star"></i>
-                                    </span>
-                                    <span class="tour-slider__rating-number">
-                                        7.3
-                                    </span>
-                                </div>
-                                <div class="tour-slider__quality">
-                                    good
-                                </div>   
                             </div>
                         </div>
                         
                     </div>
                 </div>
-                <div class="tour-slider__dot row no-gutters">
+                <!-- <div class="tour-slider__dot row no-gutters">
                     <div class="tour-slider__circle-wrap col l-12">
                         <div class="circle-dot tour-slider__circle">
                         </div>
                         <div class="circle-dot tour-slider__circle">
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <!-- video -->
@@ -1044,7 +1499,6 @@
                                 </button>
                             </div>
                         </div>
-                        <!-- <iframe width="800" height="auto" src="https://www.youtube.com/embed/9bZkp7q19f0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                     </div>
                     <div class="video__intro-text-wrap">
                         <p class="video__intro-text">
@@ -1055,60 +1509,175 @@
                         <button class="btn btn-large">view more</button>
                     </div>
                 </div>
+                <div class="video__intro-video">
+                    <iframe  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
 
             <!-- Review -->
             <div class="review grid">
                 <div class="review__title">
                     <h3 class="review__title-text">top reviews</h3>
-                    <p class="review__title-content">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum </p>
+                    <div class="review__title-content-wrap">
+                        <p class="review__title-content">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum 
+                        </p>
+                    </div>
                 </div>
                 <div class="review__customer">
-                    <div class="review__customer-list row no-gutters">
-                        <div class="review__customer-list-item col l-4">
-                            <div class="review__customer-img">
-                                <img src="./assets/img/user-img-5.png" alt="">
-                            </div>
-                            <div class="review__customer-info">
-                                <a href="" class="review__customer-title">tarragona</a>
-                                <div class="review__customer-rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                    <div class="review__customer-list row">
+                        <div class="col l-4">
+                            <div class="review__customer-list-item">
+                                <div class="review__customer-img">
+                                    <img src="./assets/img/user-img-5.png" alt="">
                                 </div>
-                                <div class="review__customer-feedback">
-                                    Fa etor eviuas lwqedit tas, vut et nihc egam yubulas. Ei euvy 
+                                <div class="review__customer-info">
+                                    <a href="" class="review__customer-title">tarragona</a>
+                                    <div class="review__customer-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="review__customer-feedback">
+                                        Fa etor eviuas lwqedit tas, vut et nihc egam yubulas. Ei euvy 
+                                    </div>
+                                    <span class="review__customer-name">carl moore</span>
                                 </div>
-                                <span class="review__customer-name">carl moore</span>
                             </div>
                         </div>
-                        <div class="review__customer-list-item col l-4">
-                            <div class="review__customer-img">
-                                <img src="./assets/img/user-img-5.png" alt="">
+                        <div class="col l-4">
+                            <div class="review__customer-list-item">
+                                <div class="review__customer-img">
+                                    <img src="./assets/img/user-img-1.png" alt="">
+                                </div>
+                                <div class="review__customer-info">
+                                    <a href="" class="review__customer-title">tarragona</a>
+                                    <div class="review__customer-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="review__customer-feedback">
+                                        Fa etor eviuas lwqedit tas, vut et nihc egam yubulas. Ei euvy 
+                                    </div>
+                                    <span class="review__customer-name">carl moore</span>
+                                </div>
                             </div>
-                            <div class="review__customer-info">
-                                <a href="" class="review__customer-title">tarragona</a>
-                                <div class="review__customer-rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                        </div>
+                        <div class="col l-4">
+                            <div class="review__customer-list-item">
+                                <div class="review__customer-img">
+                                    <img src="./assets/img/user-img-2.png" alt="">
                                 </div>
-                                <div class="review__customer-feedback">
-                                    Fa etor eviuas lwqedit tas, vut et nihc egam yubulas. Ei euvy 
+                                <div class="review__customer-info">
+                                    <a href="" class="review__customer-title">tarragona</a>
+                                    <div class="review__customer-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="review__customer-feedback">
+                                        Fa etor eviuas lwqedit tas, vut et nihc egam yubulas. Ei euvy 
+                                    </div>
+                                    <span class="review__customer-name">carl moore</span>
                                 </div>
-                                <span class="review__customer-name">carl moore</span>
+                            </div>
+                        </div>
+                        <div class="col l-4">
+                            <div class="review__customer-list-item">
+                                <div class="review__customer-img">
+                                    <img src="./assets/img/user-img-3.png" alt="">
+                                </div>
+                                <div class="review__customer-info">
+                                    <a href="" class="review__customer-title">tarragona</a>
+                                    <div class="review__customer-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="review__customer-feedback">
+                                        Fa etor eviuas lwqedit tas, vut et nihc egam yubulas. Ei euvy 
+                                    </div>
+                                    <span class="review__customer-name">carl moore</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4">
+                            <div class="review__customer-list-item">
+                                <div class="review__customer-img">
+                                    <img src="./assets/img/user-img-5.png" alt="">
+                                </div>
+                                <div class="review__customer-info">
+                                    <a href="" class="review__customer-title">tarragona</a>
+                                    <div class="review__customer-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="review__customer-feedback">
+                                        Fa etor eviuas lwqedit tas, vut et nihc egam yubulas. Ei euvy 
+                                    </div>
+                                    <span class="review__customer-name">carl moore</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4">
+                            <div class="review__customer-list-item">
+                                <div class="review__customer-img">
+                                    <img src="./assets/img/user-img-6.png" alt="">
+                                </div>
+                                <div class="review__customer-info">
+                                    <a href="" class="review__customer-title">tarragona</a>
+                                    <div class="review__customer-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="review__customer-feedback">
+                                        Fa etor eviuas lwqedit tas, vut et nihc egam yubulas. Ei euvy 
+                                    </div>
+                                    <span class="review__customer-name">carl moore</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4">
+                            <div class="review__customer-list-item">
+                                <div class="review__customer-img">
+                                    <img src="./assets/img/user-img-7.png" alt="">
+                                </div>
+                                <div class="review__customer-info">
+                                    <a href="" class="review__customer-title">tarragona</a>
+                                    <div class="review__customer-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="review__customer-feedback">
+                                        Fa etor eviuas lwqedit tas, vut et nihc egam yubulas. Ei euvy 
+                                    </div>
+                                    <span class="review__customer-name">carl moore</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="review__customer-dot">
-                        <div class="circle-dot active review__customer-circle"></div>
+                        <!-- <div class="circle-dot active review__customer-circle"></div>
                         <div class="circle-dot review__customer-circle"></div>
-                        <div class="circle-dot review__customer-circle"></div>
+                        <div class="circle-dot review__customer-circle"></div> -->
                     </div>
                 </div>
             </div>
@@ -1130,7 +1699,7 @@
                 </div>
                 <div class="feature__bottom">
                     <div class="feature__bottom-flex row no-gutters">
-                        <div class="feature__bottom-info col l-3">
+                        <div class="feature__bottom-info col l-3 m-6 c-12">
                             <div class="feature__bottom-info-padding">
                                 <img class="feature__bottom-img" src="./assets/img/h1-custom-icon-img-1.png" alt="">
                                 <h3 class="feature__bottom-title">
@@ -1141,7 +1710,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="feature__bottom-info col l-3">
+                        <div class="feature__bottom-info col l-3 m-6 c-12">
                             <div class="feature__bottom-info-padding">
                                 <img class="feature__bottom-img" src="./assets/img/h1-custom-icon-img-2.png" alt="">
                                 <h3 class="feature__bottom-title">
@@ -1152,7 +1721,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="feature__bottom-info col l-3">
+                        <div class="feature__bottom-info col l-3 m-6 c-12">
                             <div class="feature__bottom-info-padding">
                                 <img class="feature__bottom-img" src="./assets/img/h1-custom-icon-img-3.png" alt="">
                                 <h3 class="feature__bottom-title">
@@ -1163,7 +1732,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="feature__bottom-info col l-3">
+                        <div class="feature__bottom-info col l-3 m-6 c-12">
                             <div class="feature__bottom-info-padding">
                                 <img class="feature__bottom-img" src="./assets/img/h1-custom-icon-img-4.png" alt="">
                                 <h3 class="feature__bottom-title">
@@ -1181,7 +1750,84 @@
             <!--Our Team -->
             <div class="our-team">
                 <div class="gird">
-                    <div class="row no-gutters">
+                    <div class="row no-gutters our-team__slider">
+                        <div class="col l-3">
+                            <div class="our-team__img">
+                                <img src="./assets/img/our-team-img-6-1.jpg" alt="">
+                                <div class="our-team__info">
+                                    <h4 class="our-team__name">
+                                        joe avery                                
+                                    </h4>
+                                    <p class="our-team__introduce">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem lorem
+                                    </p>
+                                    <div class="our-team__socials">
+                                        <i class="fab fa-twitter"></i>
+                                        <i class="fab fa-pinterest-p"></i>
+                                        <i class="fab fa-facebook-f"></i>
+                                        <i class="fab fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3">
+                            <div class="our-team__img">
+                                <img src="./assets/img/our-team-img-7-1.jpg" alt="">
+                                <div class="our-team__info">
+                                    <h4 class="our-team__name">
+                                        bella larson                                
+                                    </h4>
+                                    <p class="our-team__introduce">
+                                        Deq des sut perspi ciatis ynde oninis iste matus error sit bolu ptato dolor
+                                    </p>
+                                    <div class="our-team__socials">
+                                        <i class="fab fa-twitter"></i>
+                                        <i class="fab fa-pinterest-p"></i>
+                                        <i class="fab fa-facebook-f"></i>
+                                        <i class="fab fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col l-3">
+                            <div class="our-team__img">
+                                <img src="./assets/img/our-team-img-8-1.jpg" alt="">
+                                <div class="our-team__info">
+                                    <h4 class="our-team__name">
+                                        jack burton                                
+                                    </h4>
+                                    <p class="our-team__introduce">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem lorem
+                                    </p>
+                                    <div class="our-team__socials">
+                                        <i class="fab fa-twitter"></i>
+                                        <i class="fab fa-pinterest-p"></i>
+                                        <i class="fab fa-facebook-f"></i>
+                                        <i class="fab fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3">
+                            <div class="our-team__img">
+                                <img src="./assets/img/our-team-img-9.jpg" alt="">
+                                <div class="our-team__info">
+                                    <h4 class="our-team__name">
+                                        grace west                                
+                                    </h4>
+                                    <p class="our-team__introduce">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem lorem
+                                    </p>
+                                    <div class="our-team__socials">
+                                        <i class="fab fa-twitter"></i>
+                                        <i class="fab fa-pinterest-p"></i>
+                                        <i class="fab fa-facebook-f"></i>
+                                        <i class="fab fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col l-3">
                             <div class="our-team__img">
                                 <img src="./assets/img/our-team-img-6-1.jpg" alt="">
@@ -1263,7 +1909,7 @@
                 </div>
                 <div class="grid">
                     <div class="row no-gutters">
-                        <div class="our-team__counter-col col l-3">  
+                        <div class="our-team__counter-col col l-3 m-3 c-12">  
                             <div class="our-team__counter">
                                 <h4 class="our-team__number-large">
                                     452
@@ -1273,7 +1919,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="our-team__counter-col col l-3">
+                        <div class="our-team__counter-col col l-3 m-3 c-12">
                             <div class="our-team__counter">
                                 <h4 class="our-team__number-large">
                                     120
@@ -1283,7 +1929,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="our-team__counter-col col l-3">
+                        <div class="our-team__counter-col col l-3 m-3 c-12">
                             <div class="our-team__counter">
                                 <h4 class="our-team__number-large">
                                     283
@@ -1293,7 +1939,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="our-team__counter-col col l-3">
+                        <div class="our-team__counter-col col l-3 m-3 c-12">
                             <div class="our-team__counter">
                                 <h4 class="our-team__number-large">
                                     197
@@ -1324,33 +1970,53 @@
                 </div>
                 <div class="grid sm-wide">
                     <div class="row no-gutters">
-                        <div class="col l-4">
-                            <div class="resort__location-info">
-                                <div class="resort__location-img" style="background-image: url('./assets/img/destinations-featured-img-8-1.jpg');">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-4">
-                            <div class="resort__location-info">
-                                <div class="resort__location-img" style="background-image: url('./assets/img/destinations-featured-img-8-1.jpg');">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-4">
-                            <div class="resort__location-info">
-                                <div class="resort__location-img">
-                                    <div class="resort__location-img-wrap">
-                                        <img src="./assets/img/destinations-featured-img-8-1.jpg" alt="">
+                        <div class="col l-4 m-6 c-12">
+                            <div class="resort-location__info">
+                                <div class="resort-location__img">
+                                    <div class="resort-location__img-wrap">
+                                        <div class="resort-location__img-wrap-circle">
+                                            <img src="./assets/img/destinations-featured-img-8-1.jpg" alt="">
+                                        </div>
                                     </div>
-                                    <div class="resort__location-overlay-img">
-                                        <h3 class="resort__location-name">
+                                    <div class="resort-location__overlay-img">
+                                        <h3 class="resort-location__name">
                                             slovenia
                                         </h3>
                                     </div>
-                                    <div class="resort__location-star">
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <div class="resort-location__info">
+                                <div class="resort-location__img">
+                                    <div class="resort-location__img-wrap">
+                                        <div class="resort-location__img-wrap-circle">
+                                            <img src="./assets/img/destinations-featured-img-9-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="resort-location__overlay-img">
+                                        <h3 class="resort-location__name">
+                                            france
+                                        </h3>
+                                    </div>
+                                    <div class="resort-location__star">
                                         <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12">
+                            <div class="resort-location__info">
+                                <div class="resort-location__img">
+                                    <div class="resort-location__img-wrap">
+                                        <div class="resort-location__img-wrap-circle">
+                                            <img src="./assets/img/destinations-featured-img-10-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="resort-location__overlay-img">
+                                        <h3 class="resort-location__name">
+                                            switzerland
+                                        </h3>
                                     </div>
                                 </div> 
                             </div>
@@ -1358,8 +2024,116 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Footer -->
+            <footer>
+                <div class="grid wide">
+                    <div class="row ">
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer__company-info ">
+                                <div class="footer__company-logo-wrap">
+                                    <img src="./assets/img/logo-footer.png" alt="" class="footer__company-logo">
+                                </div>
+                                <p class="footer__company-description">
+                                    Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae
+                                </p>
+                                <div class="footer__company-contact">
+                                    <div class="footer__company-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <a class="footer__contact-link"  href="mailto:123@gmail.com">123@gmail.com</a>
+                                    </div>
+                                    <div class="footer__company-item">
+                                        <i class="fas fa-phone"></i>
+                                        <a class="footer__contact-link"  href="tel:+1203123123">1 2031 23123</a>
+                                    </div>
+                                    <div class="footer__company-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <a  class="footer__contact-link" href="#">Ha Noi, Viet Nam</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer__recent-post">
+                                <div class="footer__title">
+                                    <h4 class="footer__title-item">
+                                        Our Recent Posts         
+                                    </h4>
+                                </div>
+                                <div class="footer__recent-post-item">
+                                    <span class="footer__recent-post-name">
+                                        Visit Thailand, Bali And China
+                                    </span>
+                                    <span class="footer__recent-post-time">
+                                        September 7, 2016
+                                    </span>
+                                </div>
+                                <div class="footer__recent-post-item">
+                                    <span class="footer__recent-post-name">
+                                        Visit Thailand, Bali And China
+                                    </span>
+                                    <span class="footer__recent-post-time">
+                                        September 7, 2016
+                                    </span>
+                                </div>
+                                <div class="footer__recent-post-item">
+                                    <span class="footer__recent-post-name">
+                                        Visit Thailand, Bali And China
+                                    </span>
+                                    <span class="footer__recent-post-time">
+                                        September 7, 2016
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer__subcribe-letter">
+                                <div class="footer__title">
+                                    <h4 class="footer__title-item">
+                                        Subscribe to our Newsletter         
+                                    </h4>
+                                    <p class="footer__title-p">
+                                        Etiam rhoncus. Maecenas temp us, tellus eget condimentum rho
+                                    </p>
+                                </div>
+                            </div>
+                            <form class="footer__subcribe-letter-form">
+                                <div class="footer__subcribe-letter-input">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" placeholder="Name">
+                                </div>
+                                <div class="footer__subcribe-letter-input">
+                                    <i class="fas fa-envelope footer__subcribe-padding-icon"></i>
+                                    <input type="text" placeholder="Email">
+                                </div>
+                                <button class="btn btn-large footer__subcribe-btn">
+                                    subcribe</button>
+                            </form>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer__company-social">
+                                <div class="footer__title">
+                                    <h4 class="footer__title-item">
+                                        Our Instagram         
+                                    </h4>
+                                    <p class="footer__title-p">
+                                        Etiam rhoncus. Maecenas temp us, tellus eget condimentum rho
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </main>
     </div>
+    <script> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/slickSlider.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script >
+        
+    </script>
 </body>
 </html>
