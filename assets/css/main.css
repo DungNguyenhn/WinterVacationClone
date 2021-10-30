@@ -968,9 +968,13 @@
     display: block;
     width: 100%;
 }
-.our-team__img:hover .our-team__info{
-    transform: translateY(-100%);
+
+@media (hover: hover) and (pointer: fine) {
+    .our-team__img:hover .our-team__info{
+        transform: translateY(-100%);
+    }
 }
+  
 .our-team__info{
     width: 100%;
     background-color: var(--primary-color);

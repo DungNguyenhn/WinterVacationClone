@@ -197,3 +197,12 @@ for(let i=0;i<formMobileTitle.length;i++){
     }
 }
 
+// Click on Mobile
+if(window.matchMedia("(max-width: 1023px)").matches){
+    const ourTeamImgs = SS('.our-team__slider .our-team__img');
+    for(let i=0;i<ourTeamImgs.length;i++){
+        ourTeamImgs[i].querySelector('img').onclick = (e)=>{
+            ourTeamImgs[i].querySelector('.our-team__info').classList.toggle('active');
+        }
+    }
+}

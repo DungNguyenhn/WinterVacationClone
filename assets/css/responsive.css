@@ -321,6 +321,12 @@
         width: unset;
         height: 500px;
     }
+    .our-team__img:hover .our-team__info{
+        
+    }
+    .our-team__info.active{
+        transform: translateY(-100%);
+    }
     
 @media (min-width: 740px) and (max-width: 1023px){
     footer .col{
