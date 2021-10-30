@@ -79,6 +79,17 @@ function reviewSliderEffect(){
                         autoplay:false
                         }
                     },
+                    {
+                        breakpoint: 600,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                infinite: true,
+                                draggable: true,
+                                arrows:false,
+                                autoplay:false
+                            },
+                        }
                 ],
             });
 }
@@ -115,7 +126,18 @@ function humanSliderEffect(){
                             arrows:false,
                             autoplay:false
                             }
-                        },
+                    },
+                    {
+                        breakpoint: 600,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                infinite: true,
+                                draggable: true,
+                                arrows:false,
+                                autoplay:false
+                            },
+                        }
                 ],
             });
 }

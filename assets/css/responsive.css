@@ -116,6 +116,8 @@
         display: none;
         top:0;
         left: 0;
+        width: 100%;
+        height: 100%;
         bottom: 0;
         right: 0;
         z-index: 3;
@@ -306,12 +308,18 @@
     }
 }
 @media (max-width: 1023px){
-    .slider__btn-previous-wrap,
-    .slider__btn-next-wrap{
+    .slider__btn-wrap{
         display: none;
     }
     .our-team__counter{
         padding: 20px;
+    }
+    .slider__img-wrap{
+        max-height: 600px;
+    }
+    .slider__img{
+        width: unset;
+        height: 500px;
     }
     
 @media (min-width: 740px) and (max-width: 1023px){
@@ -327,19 +335,20 @@
         width: 576px;
         height: 324px;
     }
-    .slider__sub-title{
+    /* .slider__sub-title{
         font-size: 3rem;
         line-height: 3.2rem;
     }
-    .slider__title{
-        font-size: 6rem;
-        line-height: 6.2rem;
-        padding-bottom: 24px;
-    }
+    
     .slider__text-content{
         font-size: 1.4rem;
         line-height: 1.6rem;
         width: 80%;
+    } */
+    .slider__title{
+        font-size: 6rem;
+        line-height: 6.2rem;
+        padding-bottom: 24px;
     }
     .resort-location__info{
         margin: 0px 24px;
@@ -361,28 +370,59 @@
 }
 @media(max-width: 739px){
     .video__intro-info-wrap{
-        width: 400px;
+        width: 80%;
     }
     .video__intro-video iframe {
-        width: 480px;
+        width: 80%;
         height: 270px;
     }
     .slider__sub-title{
-        font-size: 2rem;
-        line-height: 2.2rem;
+        font-size: 2.6rem;
+        line-height: 2.8rem;
+        width: 100%;
+        text-align: center;
     }
     .slider__title{
         font-size: 4rem;
         line-height: 4.2rem;
+        padding-bottom: 20px;
+        width: 100%;
+        text-align: center;
     }
     .slider__text-content{
-        font-size: 1rem;
-        line-height: 1.2rem;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        width: 100%;
+    } 
+    .review__title{
+        width: 100%;
     }
     .our-team__counter{
         height: 120px;
     }
+    .resort-location__title--large{
+        text-align: center;
+    }
+    .feature__title-large{
+        text-align: center;
+        margin: 12px 6px;
+    }
     .feature__bottom-info{
+        padding-bottom: 36px;
+    }
+    .resort-location__info{
+        margin-top: 24px;
+    }
+    footer{
+        overflow: hidden;
+    }
+    .footer__item-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer__item{
+        width: 80%;
         padding-bottom: 36px;
     }
 }
