@@ -969,6 +969,8 @@
     width: 100%;
 }
 
+
+/* Hover only not touch screen */
 @media (hover: hover) and (pointer: fine) {
     .our-team__img:hover .our-team__info{
         transform: translateY(-100%);

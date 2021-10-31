@@ -156,6 +156,7 @@ for(let i=0;i<listItemNavbarMobile.length;i++){
         }
     })
 }
+
 for(let i=0;i<listItemNavbarMobileLink.length;i++){
     listItemNavbarMobileLink[i].onclick = (e)=>{
         e.preventDefault();
