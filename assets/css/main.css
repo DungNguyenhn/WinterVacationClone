@@ -138,6 +138,7 @@
 }
 .have-one-sub-menu:hover .sub-menu-second {
   max-height: 500px;
+  max-width: 240px;
 }
 .sub-menu-second {
   top: -24px;
@@ -150,6 +151,10 @@
 .sub-menu-second.sub-menu-left {
   right: 100%;
   left: unset;
+}
+.sub-menu-second.sub-menu-right,
+.sub-menu-second.sub-menu-left {
+  max-width: 0px;
 }
 .sub-menu-second.sub-menu-left .navbar__sub-menu-list-item-link {
   justify-content: end;
